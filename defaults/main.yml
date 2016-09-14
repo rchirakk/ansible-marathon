@@ -9,6 +9,8 @@ marathon_apt_repo: "deb http://repos.mesosphere.com/{{ansible_distribution|lower
 # RedHat: Mesosphere yum repository URL
 marathon_yum_package: "marathon-{{ marathon_version }}"
 mesosphere_yum_repo: "http://repos.mesosphere.com/el/{{ os_version_major }}/noarch/RPMS/{{ mesosphere_releases[os_version_major] }}"
+yum_enable_repo: ""
+yum_disable_repo: ""
 
 marathon_hostname: "{{ inventory_hostname }}"
 marathon_port: 8080
